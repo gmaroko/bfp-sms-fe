@@ -6,7 +6,7 @@ import { fetchDevices } from './js/api.js';
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', async () => {
-  const map = initMap();
+  const map = await initMap();
 
   // Fetch devices from API and add to map
   try {

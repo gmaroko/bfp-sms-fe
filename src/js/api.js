@@ -2,8 +2,6 @@ import { requireAuth } from "./utils/auth-util.js";
 import { showLoader, hideLoader } from "./utils/loader.js";
 requireAuth();
 
-
-
 /**
  * Fetch devices from API
  * @param {Object} filters - Optional filters
@@ -97,7 +95,7 @@ export async function updateDeviceStatus(deviceId, status, remarks) {
   const response = await fetch(url, {
     method: "PUT",
     headers: {
-      "Authorization": `Bearer ${sessionStorage.getItem("token")}`,
+      Authorization: `Bearer ${sessionStorage.getItem("token")}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ serviceStatus: status, remarks }),
@@ -109,4 +107,43 @@ export async function updateDeviceStatus(deviceId, status, remarks) {
   }
 
   return response.json();
+}
+
+/**
+ * Fetch device history (mock function for now, TODO: update once API is available)
+ * @param {string} deviceId - The ID of the device
+ * @returns {Promise<Object>} - API response JSON
+ */
+export async  function fetchDeviceHistory(deviceId) {
+  if (!deviceId) throw new Error("Device ID is required");
+
+  const url = `${import.meta.env.VITE_API_BASE_URL}/devices/${deviceId}/history`;
+
+  // const response = await fetch(url, {
+  //   method: "GET",
+  //   headers: {
+  //     Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+  //     "Content-Type": "application/json",
+  //   }
+  // });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([
+        {
+          timestamp: "2026-03-15 09:23",
+          action: "Status Change",
+          status: "DISCONNECT",
+          remarks: "Maintenance required",
+          by: "system",
+        },
+        {
+          timestamp: "2026-03-10 14:11",
+          action: "Status Change",
+          status: "CONNECT",
+          remarks: "Back online",
+          by: "system",
+        },
+      ]);
+    }, 500);
+  });
 }

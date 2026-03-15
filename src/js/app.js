@@ -159,12 +159,10 @@ export async function initMap() {
 
     $("#deviceHistoryBtn")
       .off("click")
-      .on("click", () => {
+      .on("click", async () => {
         $("#updateStatusForm").hide();
         $("#deviceHistorySection").show();
-        $("#deviceHistorySection").html(
-          "<p>Device history will be loaded here...</p>",
-        );
+        loadDeviceHistory(feature);
       });
 
     // Save status button click
@@ -214,6 +212,55 @@ export async function initMap() {
           $("#saveStatusBtn").prop("disabled", false).text("Save");
         }
       });
+  }
+
+  async function loadDeviceHistory(feature) {
+    const $historySection = $("#deviceHistorySection");
+    $historySection.html("<p>Loading history...</p>");
+
+    try {
+      // Mock API response — replace with real API call
+      const history = await fetchDeviceHistory(feature.properties.deviceId);
+
+      if (!history || history.length === 0) {
+        $historySection.html("<p>No history available for this device.</p>");
+        return;
+      }
+
+      const tableHtml = `
+      <table class="table table-bordered table-condensed">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Action</th>
+            <th>Status</th>
+            <th>Remarks</th>
+            <th>By</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${history
+            .map(
+              (h) => `
+            <tr>
+              <td>${h.timestamp}</td>
+              <td>${h.action}</td>
+              <td>${h.status}</td>
+              <td>${h.remarks || "-"}</td>
+              <td>${h.by}</td>
+            </tr>
+          `,
+            )
+            .join("")}
+        </tbody>
+      </table>
+    `;
+
+      $historySection.html(tableHtml);
+    } catch (err) {
+      console.error("Failed to load device history:", err);
+      $historySection.html("<p>Failed to load history. Please try again.</p>");
+    }
   }
 
   // Add devices to cluster group
