@@ -14,7 +14,7 @@ export async function initMap() {
   // Base map
   const cartoLight = L.tileLayer(
     "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-    { maxZoom: 19, attribution: "&copy; OpenStreetMap &copy; CartoDB" },
+    { maxZoom: 19, attribution: "&copy; OpenStreetMap &copy; CartoDB" }
   );
 
   map = L.map("map", {
@@ -33,12 +33,26 @@ export async function initMap() {
     disableClusteringAtZoom: 16,
   }).addTo(map);
 
+  // Helper: Icon by status
+  function getDeviceIcon(status) {
+    switch (status) {
+      case "CONNECTED":
+        return "/assets/img/sensor-color.png";
+      case "DISCONNECTED":
+        return "/assets/img/sensor-red.png";
+      case "SUSPENDED":
+        return "/assets/img/sensor-bw.png";
+      default:
+        return "/assets/img/sensor-color.png";
+    }
+  }
+
   // Devices layer
   devicesLayer = L.geoJson(null, {
     pointToLayer: (feature, latlng) =>
       L.marker(latlng, {
         icon: L.icon({
-          iconUrl: "/assets/img/sensor-color.png",
+          iconUrl: getDeviceIcon(feature.properties.serviceStatus),
           iconSize: [24, 28],
           iconAnchor: [12, 28],
           popupAnchor: [0, -25],
@@ -47,7 +61,6 @@ export async function initMap() {
         riseOnHover: true,
       }),
     onEachFeature: (feature, layer) => {
-      // Popup content
       const popupContent = `
         <table class='table table-striped table-bordered table-condensed'>
           <tr><th>Customer</th><td>${feature.properties.customerReference}</td></tr>
@@ -58,15 +71,6 @@ export async function initMap() {
         </table>
       `;
       layer.bindPopup(popupContent);
-
-      // Add to sidebar
-      $("#feature-list tbody").append(`
-        <tr class="feature-row" id="${L.stamp(layer)}" lat="${layer.getLatLng().lat}" lng="${layer.getLatLng().lng}">
-          <td style="vertical-align: middle;"><img width="16" height="18" src="/assets/img/sensor-color.png"></td>
-          <td class="feature-name">${feature.properties.customerReference}</td>
-          <td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td>
-        </tr>
-      `);
 
       // Add to search
       deviceSearch.push({
@@ -83,59 +87,67 @@ export async function initMap() {
   // Add devices to cluster group
   markerClusters.addLayer(devicesLayer);
 
-  // Sidebar sync
-  function syncSidebar() {
-    // Clear the sidebar table
+  // Sidebar sync with optional status filter
+  function syncSidebar(statusFilter = "ALL") {
     $("#feature-list tbody").empty();
+    markerClusters.clearLayers(); // remove all markers from map
 
-    // Add each device to the sidebar
     devicesLayer.eachLayer((layer) => {
-      $("#feature-list tbody").append(`
-      <tr class="feature-row" id="${L.stamp(layer)}" lat="${layer.getLatLng().lat}" lng="${layer.getLatLng().lng}">
-        <td style="vertical-align: middle;"><img width="16" height="18" src="/assets/img/sensor-color.png"></td>
-        <td class="feature-name">${layer.feature.properties.customerReference}</td>
-        <td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td>
-      </tr>
-    `);
+      const deviceStatus = layer.feature.properties.serviceStatus;
+
+      if (statusFilter === "ALL" || deviceStatus === statusFilter) {
+        // Update icon
+        layer.setIcon(
+          L.icon({
+            iconUrl: getDeviceIcon(deviceStatus),
+            iconSize: [24, 28],
+            iconAnchor: [12, 28],
+            popupAnchor: [0, -25],
+          })
+        );
+
+        // Add to cluster
+        markerClusters.addLayer(layer);
+
+        // Add to sidebar
+        $("#feature-list tbody").append(`
+          <tr class="feature-row" id="${L.stamp(layer)}" lat="${layer.getLatLng().lat}" lng="${layer.getLatLng().lng}">
+            <td style="vertical-align: middle;"><img width="16" height="18" src="${getDeviceIcon(deviceStatus)}"></td>
+            <td class="feature-name">${layer.feature.properties.customerReference}</td>
+            <td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td>
+          </tr>
+        `);
+      }
     });
 
-    // Initialize List.js for searching/sorting
     featureList = new List("features", { valueNames: ["feature-name"] });
     featureList.sort("feature-name", { order: "asc" });
-
-    // Bind click event on sidebar rows to zoom/pan to marker
-    $(".feature-row").on("click", function () {
-      const lat = parseFloat($(this).attr("lat"));
-      const lng = parseFloat($(this).attr("lng"));
-      const markerId = $(this).attr("id");
-
-      // Pan and zoom the map to the selected marker
-      map.setView([lat, lng], 16);
-
-      // Open the corresponding marker's popup
-      devicesLayer.eachLayer((layer) => {
-        if (L.stamp(layer) == markerId) {
-          layer.openPopup();
-        }
-      });
-    });
   }
 
-  map.on("moveend", syncSidebar);
+  // Click on sidebar row centers map
+  $(document).on("click", ".feature-row", function () {
+    const lat = $(this).attr("lat");
+    const lng = $(this).attr("lng");
+    map.setView([lat, lng], 16); // zoom in on user
+  });
 
+  // Dropdown filter for status
+  $("#status-filter").on("change", function () {
+    const selectedStatus = $(this).val();
+    syncSidebar(selectedStatus);
+  });
+
+  // Expose addDevices method
   map.addDevices = function (deviceData) {
-    // Add GeoJSON data to devicesLayer (source for sidebar/search)
-    devicesLayer.addData(deviceData);
-
-    // Clear cluster group and add all markers from devicesLayer
-    markerClusters.clearLayers();
-    devicesLayer.eachLayer((layer) => {
-      markerClusters.addLayer(layer);
+    const tempLayer = L.geoJson(deviceData, {
+      pointToLayer: devicesLayer.options.pointToLayer,
+      onEachFeature: devicesLayer.options.onEachFeature,
     });
-
-    // Update sidebar
+    tempLayer.eachLayer((layer) => markerClusters.addLayer(layer));
+    devicesLayer.addData(deviceData);
     syncSidebar();
   };
+
   // Fetch devices from API immediately
   try {
     const devices = await fetchDevices();

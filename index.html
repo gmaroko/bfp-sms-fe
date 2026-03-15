@@ -87,22 +87,30 @@
       <div class="sidebar-wrapper">
         <div class="panel panel-default" id="features">
           <div class="panel-heading">
-            <h3 class="panel-title">BFP IOT Kits
+            <h3 class="panel-title">BFP Customer Kits
               <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i
                   class="fa fa-chevron-left"></i></button>
             </h3>
           </div>
           <div class="panel-body">
             <div class="row">
-              <div class="col-xs-8 col-md-8">
-                <input type="text" class="form-control search" placeholder="search devices..." />
+              <div class="col-xs-6 col-md-6">
+                <input type="text" class="form-control search" placeholder="Search ..." />
               </div>
-              <div class="col-xs-4 col-md-4">
-                <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i
-                    class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
+              <div class="col-xs-3 col-md-3">
+                <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn">
+                  <i class="fa fa-sort"></i>&nbsp;&nbsp;Sort
+                </button>
+              </div>
+              <div class="col-xs-3 col-md-3">
+                <select id="status-filter" class="form-control">
+                  <option value="ALL">All</option>
+                  <option value="CONNECTED">Connected</option>
+                  <option value="DISCONNECTED">Disconnected</option>
+                </select>
               </div>
             </div>
-          </div>
+        </div>
           <div class="sidebar-table">
             <table class="table table-hover" id="feature-list">
               <thead class="hidden">
