@@ -1,0 +1,52 @@
+# Node / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json.orig
+
+# Build output
+dist/
+build/
+.out/
+.cache/
+.parcel-cache/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.local
+
+# OS files
+.DS_Store
+Thumbs.db
+.desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.iml
+
+# Logs
+logs/
+*.log
+
+# Framework-specific
+.next/
+.nuxt/
+out/
+
+# Misc
+*.tsbuildinfo
+*.local
+
+
+
+
+## Custom Ignores
+data/
