@@ -1,7 +1,6 @@
 import * as L from "leaflet";
 import "leaflet.markercluster";
 import List from "list.js";
-import Bloodhound from "bloodhound-js";
 import { fetchDevices } from "./api.js";
 
 export async function initMap() {
@@ -14,7 +13,7 @@ export async function initMap() {
   // Base map
   const cartoLight = L.tileLayer(
     "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-    { maxZoom: 19, attribution: "&copy; OpenStreetMap &copy; CartoDB" }
+    { maxZoom: 19, attribution: "&copy; OpenStreetMap &copy; CartoDB" },
   );
 
   map = L.map("map", {
@@ -61,16 +60,28 @@ export async function initMap() {
         riseOnHover: true,
       }),
     onEachFeature: (feature, layer) => {
+      // Popup content with Manage Device button
       const popupContent = `
-        <table class='table table-striped table-bordered table-condensed'>
-          <tr><th>Customer</th><td>${feature.properties.customerReference}</td></tr>
-          <tr><th>Serial</th><td>${feature.properties.serial}</td></tr>
-          <tr><th>Online Status</th><td>${feature.properties.onlineStatus}</td></tr>
-          <tr><th>Last Ping</th><td>${feature.properties.lastPing}</td></tr>
-          <tr><th>Service Status</th><td>${feature.properties.serviceStatus}</td></tr>
-        </table>
-      `;
+    <table class='table table-striped table-bordered table-condensed'>
+      <tr><th>Customer</th><td>${feature.properties.customerReference}</td></tr>
+      <tr><th>Serial</th><td>${feature.properties.serial}</td></tr>
+      <tr><th>Online Status</th><td>${feature.properties.onlineStatus}</td></tr>
+      <tr><th>Last Ping</th><td>${feature.properties.lastPing}</td></tr>
+      <tr><th>Service Status</th><td>${feature.properties.serviceStatus}</td></tr>
+    </table>
+    <button class="btn btn-primary btn-xs" id="manageDeviceBtn">Manage Device</button>
+  `;
+
       layer.bindPopup(popupContent);
+
+      // Add to sidebar
+      $("#feature-list tbody").append(`
+    <tr class="feature-row" id="${L.stamp(layer)}" lat="${layer.getLatLng().lat}" lng="${layer.getLatLng().lng}">
+      <td style="vertical-align: middle;"><img width="16" height="18" src="/assets/img/sensor-color.png"></td>
+      <td class="feature-name">${feature.properties.customerReference}</td>
+      <td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td>
+    </tr>
+  `);
 
       // Add to search
       deviceSearch.push({
@@ -81,8 +92,129 @@ export async function initMap() {
         lat: feature.geometry.coordinates[1],
         lng: feature.geometry.coordinates[0],
       });
+
+      // Handle Manage Device button inside popup
+      layer.on("popupopen", () => {
+        $("#manageDeviceBtn")
+          .off("click")
+          .on("click", () => {
+            openManageDeviceModal(feature);
+          });
+      });
     },
   });
+
+  function openManageDeviceModal(feature) {
+    const currentStatus = feature.properties.serviceStatus;
+    const possibleStatuses = ["CONNECT", "DISCONNECT", "SUSPEND"].filter(
+      (s) => s !== currentStatus.slice(0, -2), // remove "ED" from status for comparison
+    );
+
+    const modalContent = `
+    <h4>Manage Device - ${feature.properties.customerReference}</h4>
+    <div class="btn-group" role="group" style="margin-bottom: 15px;">
+      <button type="button" class="btn btn-primary" id="updateStatusBtn">Update Status</button>   
+      <button type="button" class="btn btn-info" id="deviceHistoryBtn">Device History</button>
+    </div>
+
+    <div id="updateStatusForm" style="display:none; margin-top: 15px;">
+      <form>
+        <div class="form-group">
+          <label>Current Status</label>
+          <input type="text" class="form-control" value="${currentStatus}" readonly>
+        </div>
+        <div class="form-group">
+          <label>New Status</label>
+          <select class="form-control" id="newStatusSelect">
+            ${possibleStatuses.map((s) => `<option value="${s}">${s}</option>`).join("")}
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Remarks</label>
+          <textarea class="form-control" id="statusRemarks" rows="2"></textarea>
+          <br>
+          <label for="consent">
+          <input type="checkbox" id="consent" name="consent" value="accepted" required>  I understand the implications of this change!
+    </label>
+        </div>
+        <button type="button" class="btn btn-success" id="saveStatusBtn">Save</button>
+      </form>
+    </div>
+
+    <div id="deviceHistorySection" style="display:none; margin-top: 15px;">
+      <p>Loading history...</p>
+    </div>
+  `;
+
+    $("#deviceDetailModal .modal-body").html(modalContent);
+    $("#deviceDetailModal").modal("show");
+
+    // Toggle between Update Status and Device History
+    $("#updateStatusBtn")
+      .off("click")
+      .on("click", () => {
+        $("#updateStatusForm").show();
+        $("#deviceHistorySection").hide();
+      });
+
+    $("#deviceHistoryBtn")
+      .off("click")
+      .on("click", () => {
+        $("#updateStatusForm").hide();
+        $("#deviceHistorySection").show();
+        $("#deviceHistorySection").html(
+          "<p>Device history will be loaded here...</p>",
+        );
+      });
+
+    // Save status button click
+    $("#saveStatusBtn")
+      .off("click")
+      .on("click", async () => {
+        const newStatus = $("#newStatusSelect").val();
+        const remarks = $("#statusRemarks").val().trim();
+        const consentGiven = $("#consent").is(":checked");
+
+        // Validation
+        if (!consentGiven) {
+          alert("You must acknowledge the implications by checking the box.");
+          return;
+        }
+
+        if (!remarks) {
+          alert("Please provide remarks for this change.");
+          return;
+        }
+
+        alert(
+          `Processing. Status will be updated to ${newStatus} with remarks: ${remarks}`,
+        );
+        try {
+          // Disable Save button to prevent multiple clicks
+          $("#saveStatusBtn").prop("disabled", true).text("Saving...");
+
+          // Call API to update device status
+          await updateDeviceStatus(
+            feature.properties.deviceId,
+            newStatus,
+            remarks,
+          );
+
+          // Success
+          // $("#deviceDetailModal").modal("hide");
+
+          // update status on the map popup
+          feature.properties.serviceStatus = newStatus;
+          layer.bindPopup(generatePopupContent(feature));
+        } catch (err) {
+          console.error("Failed to update device status:", err);
+          alert("Failed to update device status. Please try again.");
+        } finally {
+          // Re-enable Save button
+          $("#saveStatusBtn").prop("disabled", false).text("Save");
+        }
+      });
+  }
 
   // Add devices to cluster group
   markerClusters.addLayer(devicesLayer);
@@ -103,7 +235,7 @@ export async function initMap() {
             iconSize: [24, 28],
             iconAnchor: [12, 28],
             popupAnchor: [0, -25],
-          })
+          }),
         );
 
         // Add to cluster
@@ -155,6 +287,5 @@ export async function initMap() {
   } catch (err) {
     console.error("Failed to load devices:", err);
   }
-
   return map;
 }
