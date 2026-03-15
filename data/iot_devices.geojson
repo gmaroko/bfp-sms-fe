@@ -1,0 +1,4427 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a91494d7-fe26-45f2-a000-8314c4e309fa",
+                "serial": "1314830185448564",
+                "customerReference": "Customer One",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "10/5/2025"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.16184375415929,
+                    2.4206440169397325
+                ],
+                "type": "Point"
+            },
+            "id": 0
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "692eb971-d2f9-4cab-a57c-ccc2757ba997",
+                "serial": "8581642749404089",
+                "customerReference": "Alex Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/17/2025 21:16:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.99622307128883,
+                    -0.10406199762734403
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "c56f96bd-aa12-4fcb-9740-0cf858cfc8bd",
+                "serial": "5206134756809536",
+                "customerReference": "Michael Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/13/2025 20:45:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.789277867828325,
+                    -2.076593494264731
+                ],
+                "type": "Point"
+            },
+            "id": 2
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "56bf44e0-ae6a-49af-b40d-a268dd285cc9",
+                "serial": "8304517468400837",
+                "customerReference": "Christine Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/15/2025 04:35:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.143580076785796,
+                    4.300819772673958
+                ],
+                "type": "Point"
+            },
+            "id": 3
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "33e39e0c-0410-4e34-be83-8250727a8620",
+                "serial": "6240507229144633",
+                "customerReference": "Alice Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/18/2025 03:07:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.93218443146817,
+                    1.3214414760380295
+                ],
+                "type": "Point"
+            },
+            "id": 4
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "60b2a989-fcdf-4f61-9874-cdc13b7ca3d0",
+                "serial": "9547469995358756",
+                "customerReference": "Alice Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/08/2025 17:10:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.69591273373153,
+                    -3.5307504648632633
+                ],
+                "type": "Point"
+            },
+            "id": 5
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "842d33d4-86a9-4aca-95d6-694ccbc90cf5",
+                "serial": "3469750728279714",
+                "customerReference": "Michelle Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/20/2025 18:10:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.661717527079034,
+                    3.9429899872588896
+                ],
+                "type": "Point"
+            },
+            "id": 6
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "d8f7b945-3c96-42d3-b13f-1692a0524f66",
+                "serial": "4434012121530016",
+                "customerReference": "Alex Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/29/2025 20:32:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.01860966756374,
+                    3.1413764573643244
+                ],
+                "type": "Point"
+            },
+            "id": 7
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "ae2289cd-fdc2-4beb-96d6-e087674d46a4",
+                "serial": "2194411994912898",
+                "customerReference": "Chris Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/12/2025 03:09:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.61536974569252,
+                    4.30352099181203
+                ],
+                "type": "Point"
+            },
+            "id": 8
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "bfeb24dd-6601-4398-8c60-24375018a67d",
+                "serial": "5314599328871522",
+                "customerReference": "Jane Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/04/2025 17:00:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.31883768761858,
+                    -1.3032624218087174
+                ],
+                "type": "Point"
+            },
+            "id": 9
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "9e10be38-28d8-431a-b77f-6bb7acb89479",
+                "serial": "5350984484582116",
+                "customerReference": "John Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/06/2025 09:20:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.05690517112934,
+                    -3.752877546998322
+                ],
+                "type": "Point"
+            },
+            "id": 10
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "fc56e7b8-a98d-4fd9-a87a-3b1e32635eb3",
+                "serial": "6448296124905808",
+                "customerReference": "Alice Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/11/2025 08:15:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.33221179876759,
+                    1.1003679321999975
+                ],
+                "type": "Point"
+            },
+            "id": 11
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "71539f46-134f-4373-b3d8-c0df80a14537",
+                "serial": "4236531009863732",
+                "customerReference": "Michelle Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/10/2025 22:02:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.021945110493746,
+                    3.6433642439985077
+                ],
+                "type": "Point"
+            },
+            "id": 12
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b9bf322f-414b-4ceb-b41f-74e91e96d65e",
+                "serial": "5438681824004278",
+                "customerReference": "Michelle Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/17/2025 01:53:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.428446874914115,
+                    3.628475127249838
+                ],
+                "type": "Point"
+            },
+            "id": 13
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "102c9582-960f-48f2-84e2-dba4defcaf7b",
+                "serial": "4153289319055250",
+                "customerReference": "Alice Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/16/2025 06:01:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.696923847877045,
+                    -1.7602235733915048
+                ],
+                "type": "Point"
+            },
+            "id": 14
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "5d7a4d43-a959-4f97-8d66-1d3cdf459e7a",
+                "serial": "1902106149930810",
+                "customerReference": "Christine Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/26/2025 06:13:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.604196384339026,
+                    -0.6723688569403876
+                ],
+                "type": "Point"
+            },
+            "id": 15
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8308e887-2932-4fdb-b806-73170a312233",
+                "serial": "2873678492786643",
+                "customerReference": "Chris Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/28/2025 01:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.55717408620974,
+                    -3.128850700826081
+                ],
+                "type": "Point"
+            },
+            "id": 16
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "996ecabb-f327-48f5-a719-30bd0e673626",
+                "serial": "5233816587235392",
+                "customerReference": "Alice Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/24/2025 06:14:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.65316065151377,
+                    0.833639409837458
+                ],
+                "type": "Point"
+            },
+            "id": 17
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "957b9455-b92d-42db-be5f-515d3d21e50c",
+                "serial": "7190299523230880",
+                "customerReference": "Michael Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/17/2025 12:27:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.186565402491745,
+                    1.7534525668319105
+                ],
+                "type": "Point"
+            },
+            "id": 18
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7712f519-508c-4cbc-80d5-2b95136402c4",
+                "serial": "9173346446188759",
+                "customerReference": "Alice Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/03/2025 21:57:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.146968564057644,
+                    2.1573503942042525
+                ],
+                "type": "Point"
+            },
+            "id": 19
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "07aa531d-c9cf-4a3b-984c-fb0727aed1cf",
+                "serial": "5080233335779220",
+                "customerReference": "Jane Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/29/2025 20:49:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.71505722963166,
+                    1.7229231448965727
+                ],
+                "type": "Point"
+            },
+            "id": 20
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "bf7ab7ac-7ea1-4680-820c-ba97a1db1350",
+                "serial": "6696627141270646",
+                "customerReference": "John Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/04/2025 07:21:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.87082853850492,
+                    2.572308512078207
+                ],
+                "type": "Point"
+            },
+            "id": 21
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "80bbb7a7-9da8-4a93-adb8-d53fb8025417",
+                "serial": "6859928329376517",
+                "customerReference": "John Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/09/2025 03:42:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.373598147670634,
+                    -3.637902966888129
+                ],
+                "type": "Point"
+            },
+            "id": 22
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "755db91e-6407-43be-9c75-1acf12bde746",
+                "serial": "2675347203146937",
+                "customerReference": "Jane Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/02/2025 23:27:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.27564188617651,
+                    -4.352610482734917
+                ],
+                "type": "Point"
+            },
+            "id": 23
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "061d2f48-3115-4d53-beef-d56113a972ca",
+                "serial": "9097242108241773",
+                "customerReference": "Alex Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/01/2025 18:32:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.18307353595206,
+                    4.552375403268926
+                ],
+                "type": "Point"
+            },
+            "id": 24
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "890f7912-7fc8-4680-8c1f-a0264c2e43f0",
+                "serial": "6903399931514273",
+                "customerReference": "Christine Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/30/2025 22:33:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.11028637000847,
+                    -2.517323417872598
+                ],
+                "type": "Point"
+            },
+            "id": 25
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "6a13dd52-ef7e-4d48-85e3-173766a01655",
+                "serial": "2437646372866736",
+                "customerReference": "John Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/07/2025 03:12:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.844498710528626,
+                    1.4719939273549825
+                ],
+                "type": "Point"
+            },
+            "id": 26
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "73e67ed2-d552-4a24-850d-e5f4157d59e5",
+                "serial": "5864400976591855",
+                "customerReference": "Alice Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/22/2025 20:50:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.43010564418735,
+                    -2.220958651544162
+                ],
+                "type": "Point"
+            },
+            "id": 27
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f673073d-24b0-469c-bcbc-074034901292",
+                "serial": "9946195219649864",
+                "customerReference": "Michelle Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/14/2025 04:53:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.12768129884345,
+                    4.356882058978074
+                ],
+                "type": "Point"
+            },
+            "id": 28
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "bb65b88f-96d9-4e74-98e1-bc27a6227630",
+                "serial": "5839696640647220",
+                "customerReference": "Chris Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/27/2025 11:42:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.857197182531586,
+                    -4.260272605549245
+                ],
+                "type": "Point"
+            },
+            "id": 29
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2ec51b5a-2a9c-46af-a425-b72d94447014",
+                "serial": "7076177850435704",
+                "customerReference": "Alice Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/28/2025 17:51:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.2064910375765,
+                    -1.3161525651245305
+                ],
+                "type": "Point"
+            },
+            "id": 30
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "651c5a15-28f0-4451-9e27-5df3c2f9a7c8",
+                "serial": "9493631147025309",
+                "customerReference": "Christine Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/24/2025 00:50:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.66104037830719,
+                    1.4656982944563204
+                ],
+                "type": "Point"
+            },
+            "id": 31
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "d8c730cb-e129-4dbd-919c-5e5e984e40ce",
+                "serial": "4402856691376640",
+                "customerReference": "Alice Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/09/2025 07:40:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.621969675558994,
+                    -4.270145212227634
+                ],
+                "type": "Point"
+            },
+            "id": 32
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8e046a71-f32b-461c-871f-565c895dc7f9",
+                "serial": "3856305737120078",
+                "customerReference": "Alex Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/14/2025 06:51:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.032186903512205,
+                    -4.626491612378382
+                ],
+                "type": "Point"
+            },
+            "id": 33
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0c06f2ad-bb4f-46fa-a7c3-3f9b6fe6b5e2",
+                "serial": "1890052585649561",
+                "customerReference": "Chris Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/28/2025 08:57:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.366692808543824,
+                    1.3208930714318612
+                ],
+                "type": "Point"
+            },
+            "id": 34
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "274fc2e0-ca0c-4bb7-be30-0c9004d560b1",
+                "serial": "5527195842522285",
+                "customerReference": "Jane Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/28/2025 04:29:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.02459006267321,
+                    3.3093366818677827
+                ],
+                "type": "Point"
+            },
+            "id": 35
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "96669839-f0cc-4357-a583-c66cc1f85311",
+                "serial": "7283641457486814",
+                "customerReference": "Chris Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/17/2025 08:50:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.014118569454,
+                    -3.3416498702141686
+                ],
+                "type": "Point"
+            },
+            "id": 36
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "1c7e0321-2124-41f9-a0ba-82df5d812818",
+                "serial": "2239184561638872",
+                "customerReference": "John Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/15/2025 18:12:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.10395795097824,
+                    4.3331402578480285
+                ],
+                "type": "Point"
+            },
+            "id": 37
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "5c4a4ffc-712e-4043-9da0-b36b4c15e8de",
+                "serial": "5045219492943461",
+                "customerReference": "Michelle Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/25/2025 07:51:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.4532480329282,
+                    -2.742385907900677
+                ],
+                "type": "Point"
+            },
+            "id": 38
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a508ce95-b524-4275-9c6e-98bd15ea4655",
+                "serial": "1757127787904348",
+                "customerReference": "Michelle Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/15/2025 23:30:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.22160605130617,
+                    4.545910253267141
+                ],
+                "type": "Point"
+            },
+            "id": 39
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "6c19f74c-24c4-4d48-9bfb-effadbab96e1",
+                "serial": "8579910093866052",
+                "customerReference": "Chris Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/24/2025 08:04:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.68847338606734,
+                    3.409876114628717
+                ],
+                "type": "Point"
+            },
+            "id": 40
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "4f5d8b2b-8a19-45ea-ac8c-6f7afe6533b1",
+                "serial": "6650322473278529",
+                "customerReference": "Michelle Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/15/2025 15:23:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.004808740451075,
+                    4.592569756263932
+                ],
+                "type": "Point"
+            },
+            "id": 41
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "72f5e8f8-f415-4a75-b338-18ad38324d73",
+                "serial": "1142939361003581",
+                "customerReference": "Jane Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/12/2025 00:35:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.47647630304401,
+                    1.9027329474863865
+                ],
+                "type": "Point"
+            },
+            "id": 42
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "3ef627cc-76a3-44dc-a597-a90c764e8a2e",
+                "serial": "4683866794163571",
+                "customerReference": "Christine Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/31/2025 20:37:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.09299260982264,
+                    0.9535899854283283
+                ],
+                "type": "Point"
+            },
+            "id": 43
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8068f543-f65f-40f9-b328-5d51b4d4bdb0",
+                "serial": "6976421322337514",
+                "customerReference": "John Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/11/2025 14:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.29667053001343,
+                    -2.2665161703495116
+                ],
+                "type": "Point"
+            },
+            "id": 44
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "dc1d8e43-b224-495d-bfab-441052ae3e33",
+                "serial": "8329016782739922",
+                "customerReference": "Chris Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/18/2025 21:37:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.449893829924854,
+                    -1.2697944460525301
+                ],
+                "type": "Point"
+            },
+            "id": 45
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "33072a9c-6451-4402-b0c8-bb9eb86a29c0",
+                "serial": "6034353212069965",
+                "customerReference": "Chris Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/13/2025 18:17:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    33.98390072303525,
+                    3.560493374983948
+                ],
+                "type": "Point"
+            },
+            "id": 46
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "374e3891-4b5f-49a8-bdb2-96005a18a8a5",
+                "serial": "3681842026135264",
+                "customerReference": "Michelle Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/13/2025 02:57:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.98447996954557,
+                    1.574468362338144
+                ],
+                "type": "Point"
+            },
+            "id": 47
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a3a0d332-304f-43d4-a08f-4b8506b0c93e",
+                "serial": "8780483090496502",
+                "customerReference": "Alex Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/09/2025 07:45:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.81694199786406,
+                    4.131726533716351
+                ],
+                "type": "Point"
+            },
+            "id": 48
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "607163bf-81af-467e-9447-cbf576293d4c",
+                "serial": "7502124546190541",
+                "customerReference": "Jane Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/07/2025 06:23:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.599672348320176,
+                    -4.633897041536864
+                ],
+                "type": "Point"
+            },
+            "id": 49
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "843cd1d6-5443-4dfb-893d-3f1554debc77",
+                "serial": "1071138088425501",
+                "customerReference": "Chris Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/25/2025 05:25:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.83881409622779,
+                    1.9957926312268253
+                ],
+                "type": "Point"
+            },
+            "id": 50
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "291cbb48-1501-4f59-94b1-b4f4216d4b89",
+                "serial": "8588987664819024",
+                "customerReference": "Alex Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/24/2025 21:32:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.644201688985696,
+                    -2.8345832517104252
+                ],
+                "type": "Point"
+            },
+            "id": 51
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "86b20ba2-e3e7-4b83-a94e-9d7c2a9f9132",
+                "serial": "7708076141330631",
+                "customerReference": "Alex Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/07/2025 13:12:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.62580711124174,
+                    0.8984767122294262
+                ],
+                "type": "Point"
+            },
+            "id": 52
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "1359ea12-4b6e-4432-b913-ecf228899bc0",
+                "serial": "8047387071326357",
+                "customerReference": "John Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/21/2025 21:59:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.75986626095977,
+                    0.9682730382924705
+                ],
+                "type": "Point"
+            },
+            "id": 53
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "4a9e39bf-b432-4484-9334-213ffa1500ba",
+                "serial": "6793031906091840",
+                "customerReference": "Alex Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/09/2025 02:40:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.012107251831644,
+                    2.562946502937705
+                ],
+                "type": "Point"
+            },
+            "id": 54
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f3bc2e21-5cd6-4d2d-9fef-c7d99bbaa946",
+                "serial": "9925688218776033",
+                "customerReference": "Chris Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/22/2025 04:39:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.85619923607554,
+                    -1.155784555912117
+                ],
+                "type": "Point"
+            },
+            "id": 55
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "608e437c-b760-4ffe-b47d-308b83d8e780",
+                "serial": "1247185943910499",
+                "customerReference": "John Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/04/2025 16:40:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.35468580494543,
+                    -2.00988314062869
+                ],
+                "type": "Point"
+            },
+            "id": 56
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "d0914378-7346-4ab7-8185-5404ae1d5004",
+                "serial": "7209624960550405",
+                "customerReference": "John Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/02/2025 05:31:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.17986791216466,
+                    1.6087245381933375
+                ],
+                "type": "Point"
+            },
+            "id": 57
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a73c4acb-bac2-4a82-a66e-142c7371ce4c",
+                "serial": "5775722509489005",
+                "customerReference": "Alex Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/26/2025 22:41:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.23567436334954,
+                    -2.0051168173420755
+                ],
+                "type": "Point"
+            },
+            "id": 58
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7515c618-4b8b-4bf2-98c5-ddb7dffccd50",
+                "serial": "7677189152573310",
+                "customerReference": "Alex Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/12/2025 09:00:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.48262091171066,
+                    1.1202422448959446
+                ],
+                "type": "Point"
+            },
+            "id": 59
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "4dbcfd43-ec1e-43b6-99e0-70ee8a0fb5f0",
+                "serial": "5463656136018579",
+                "customerReference": "Michael Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/25/2025 19:47:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.638667337077514,
+                    1.8685643316823937
+                ],
+                "type": "Point"
+            },
+            "id": 60
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2dc896e6-6d1b-4607-8c97-110ecca5eb3c",
+                "serial": "8686675009819784",
+                "customerReference": "Chris Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/28/2025 22:40:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.44861681568838,
+                    -2.3657207145574084
+                ],
+                "type": "Point"
+            },
+            "id": 61
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "99020bf8-1f2f-4c55-8f37-17ca94a31443",
+                "serial": "5201995840957286",
+                "customerReference": "Chris Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/11/2025 21:06:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.319236677852,
+                    4.434219673001391
+                ],
+                "type": "Point"
+            },
+            "id": 62
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "192a388e-d0a3-4833-90c1-02e57a26cbcd",
+                "serial": "9382974956910776",
+                "customerReference": "Alice Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/18/2025 17:22:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.963046820517775,
+                    -0.2820610670652801
+                ],
+                "type": "Point"
+            },
+            "id": 63
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "d181f111-01e3-4cc2-afeb-ecdcd324c444",
+                "serial": "8855938215891253",
+                "customerReference": "Michael Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/27/2025 05:12:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.1886618816027,
+                    -2.3568294795154254
+                ],
+                "type": "Point"
+            },
+            "id": 64
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "1db0649a-be46-413d-bba8-6b9a222ec03f",
+                "serial": "8269633029646949",
+                "customerReference": "Alex Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/20/2025 16:50:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.75240522684619,
+                    1.4184511230636048
+                ],
+                "type": "Point"
+            },
+            "id": 65
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "71348807-bf99-4f3f-980b-5c5e8c0f0157",
+                "serial": "3017042535708987",
+                "customerReference": "John Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/31/2025 06:38:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.89943621228046,
+                    1.9609728865857985
+                ],
+                "type": "Point"
+            },
+            "id": 66
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "e4991fbb-fa8e-4f88-a9d0-10d78ddabe2b",
+                "serial": "7060224076886068",
+                "customerReference": "John Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/28/2025 14:13:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.220237130067154,
+                    -2.7807893547535576
+                ],
+                "type": "Point"
+            },
+            "id": 67
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "cdde2c75-325a-446d-aa46-b7ba4c06a860",
+                "serial": "3352105953641678",
+                "customerReference": "Alice Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/30/2025 14:49:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.16305312517584,
+                    -4.04942085655016
+                ],
+                "type": "Point"
+            },
+            "id": 68
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a2601150-8724-4fc8-bce3-341edd23f228",
+                "serial": "5455355331664041",
+                "customerReference": "Michael Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/07/2025 11:36:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.98354461473579,
+                    0.6774982933009461
+                ],
+                "type": "Point"
+            },
+            "id": 69
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a3f9cc22-2edf-4654-9ad6-9ddbbc2ac11b",
+                "serial": "2648215663131433",
+                "customerReference": "Michelle Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/16/2025 05:09:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.97826434937362,
+                    -0.7634495870548319
+                ],
+                "type": "Point"
+            },
+            "id": 70
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "da135e06-e447-49ce-9404-08c4f6f14c11",
+                "serial": "6796875980184867",
+                "customerReference": "Chris Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/12/2025 03:48:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.61500601520658,
+                    4.528063556924724
+                ],
+                "type": "Point"
+            },
+            "id": 71
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "9549ee0f-83de-4110-9e13-3002975dc40d",
+                "serial": "7014672949332941",
+                "customerReference": "Christine Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/16/2025 20:24:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.462938850101736,
+                    -2.8673010463218143
+                ],
+                "type": "Point"
+            },
+            "id": 72
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "65d2be0c-615a-4093-ba9a-5c1c4a53c28a",
+                "serial": "9583443273951424",
+                "customerReference": "Jane Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/27/2025 19:57:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.02718335882966,
+                    -4.208087700650256
+                ],
+                "type": "Point"
+            },
+            "id": 73
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "07608872-6763-4307-9bfb-2a38af7b8a7d",
+                "serial": "7907275897772409",
+                "customerReference": "Jane Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/24/2025 15:15:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.57933679549941,
+                    3.093816823417489
+                ],
+                "type": "Point"
+            },
+            "id": 74
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7b46496f-9f0a-4008-895a-ef3c748601e7",
+                "serial": "3769141066217346",
+                "customerReference": "Alex Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/31/2025 16:30:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.92089653322155,
+                    2.55701980686995
+                ],
+                "type": "Point"
+            },
+            "id": 75
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "50e99272-4477-4d9f-a9b1-2df3d148e459",
+                "serial": "9757363779149824",
+                "customerReference": "Jane Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/15/2025 12:57:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.04325622630167,
+                    -3.2443420870031243
+                ],
+                "type": "Point"
+            },
+            "id": 76
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0489a8ff-8a42-4636-808f-46918ec631d8",
+                "serial": "7043263172116608",
+                "customerReference": "Alice Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/11/2025 03:39:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.53352622382373,
+                    -3.7412095314764358
+                ],
+                "type": "Point"
+            },
+            "id": 77
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "33b738e9-8a84-4c47-a404-f11c979b0fc9",
+                "serial": "6833991398690966",
+                "customerReference": "Michelle Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/31/2025 12:08:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.95246663099824,
+                    -2.7817560302831743
+                ],
+                "type": "Point"
+            },
+            "id": 78
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "708f5151-7306-44b0-aaed-41a94de32efd",
+                "serial": "4077370997288538",
+                "customerReference": "Chris Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/01/2025 13:45:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.9970041522246,
+                    -2.833313344417329
+                ],
+                "type": "Point"
+            },
+            "id": 79
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "bd12585e-174f-407a-8238-077a55f13ac4",
+                "serial": "8234047249679577",
+                "customerReference": "Christine Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/08/2025 06:17:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.369372326889156,
+                    -0.909507442702282
+                ],
+                "type": "Point"
+            },
+            "id": 80
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f6ea8107-1549-4541-8f3b-d3bcd3c1e63d",
+                "serial": "8614632072650588",
+                "customerReference": "Chris Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/07/2025 13:37:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.25495097893146,
+                    1.1278475041869145
+                ],
+                "type": "Point"
+            },
+            "id": 81
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "d212ffb7-b26a-4815-b7b9-239be40dd9b3",
+                "serial": "2159903068155139",
+                "customerReference": "Jane Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/24/2025 21:28:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.58782652295629,
+                    -1.0637630523915935
+                ],
+                "type": "Point"
+            },
+            "id": 82
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "3a3b1120-67b0-4644-b707-b5ee2e717d4b",
+                "serial": "8951708619658155",
+                "customerReference": "Alex Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/15/2025 17:40:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.39622054151171,
+                    -3.900052199279491
+                ],
+                "type": "Point"
+            },
+            "id": 83
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "25774887-1d2c-456e-9a23-fbc2c873e2d0",
+                "serial": "8962899340463867",
+                "customerReference": "Michael Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/04/2025 01:00:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.26342550996052,
+                    -2.7770508286669355
+                ],
+                "type": "Point"
+            },
+            "id": 84
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8f026a14-370c-433b-8af1-8e7e0ed3103d",
+                "serial": "4988513090624928",
+                "customerReference": "Jane Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/02/2025 23:38:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.92513283656832,
+                    -2.9910039035211575
+                ],
+                "type": "Point"
+            },
+            "id": 85
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0f90ea86-c778-4295-bb01-a12fa8030ade",
+                "serial": "6049608566581242",
+                "customerReference": "John Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/08/2025 08:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.85431147722021,
+                    0.684181658613392
+                ],
+                "type": "Point"
+            },
+            "id": 86
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "898da205-a416-4711-9c58-c35e6b2752ad",
+                "serial": "6304363181015085",
+                "customerReference": "Jane Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/07/2025 04:58:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.62368577473403,
+                    -2.2378714910962567
+                ],
+                "type": "Point"
+            },
+            "id": 87
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "3371ca47-01f3-45f6-94e4-138c4094c5dc",
+                "serial": "1042994574707280",
+                "customerReference": "Jane Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/09/2025 08:24:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.163922933876016,
+                    1.016180921147722
+                ],
+                "type": "Point"
+            },
+            "id": 88
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "fcc61137-3720-4621-b1d1-0ed453369021",
+                "serial": "4173781479801681",
+                "customerReference": "Jane Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/29/2025 14:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.611244144235776,
+                    -0.4196739083723324
+                ],
+                "type": "Point"
+            },
+            "id": 89
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "93496432-e123-4f0f-8a9a-5050e83e5e60",
+                "serial": "2240706388297773",
+                "customerReference": "Michelle Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/22/2025 00:07:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.8131434576387,
+                    -0.5957149734414191
+                ],
+                "type": "Point"
+            },
+            "id": 90
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "ae549742-26ae-4be4-8bc3-a88f8f2711ec",
+                "serial": "2761690352141987",
+                "customerReference": "Jane Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/28/2025 21:25:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.579367661685204,
+                    3.114769156275327
+                ],
+                "type": "Point"
+            },
+            "id": 91
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "25ee87f6-d372-4966-b393-abeecc651691",
+                "serial": "2280261927244743",
+                "customerReference": "John Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/26/2025 01:45:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.004988760400856,
+                    -0.2202856768146999
+                ],
+                "type": "Point"
+            },
+            "id": 92
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "052bc670-45af-475b-915d-65319cbbfb63",
+                "serial": "6377270537519259",
+                "customerReference": "Michelle Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/05/2025 05:50:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.610517023658495,
+                    1.1987636015317795
+                ],
+                "type": "Point"
+            },
+            "id": 93
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "403e431f-06bd-42d2-83d0-ecf606f6c924",
+                "serial": "3150865051613543",
+                "customerReference": "Christine Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/14/2025 09:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.05008806493059,
+                    -0.0943418301568375
+                ],
+                "type": "Point"
+            },
+            "id": 94
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "6716bfc8-f790-43b3-88ae-6d21d4e5bcc7",
+                "serial": "3830648739168468",
+                "customerReference": "Alex Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/26/2025 14:46:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.08584168399129,
+                    -1.8629995899822864
+                ],
+                "type": "Point"
+            },
+            "id": 95
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "864682d6-4318-48bf-a264-d904fab270a9",
+                "serial": "2334619986990456",
+                "customerReference": "Jane Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/23/2025 04:16:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.70788052410603,
+                    0.8175700562969128
+                ],
+                "type": "Point"
+            },
+            "id": 96
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "12c8fbcf-f68f-4a32-a49d-710f5f764ac3",
+                "serial": "3133771753218678",
+                "customerReference": "Christine Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/05/2025 22:35:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.58086229958661,
+                    -1.115383610733785
+                ],
+                "type": "Point"
+            },
+            "id": 97
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7d7f5fc2-8ccc-4c0c-b37d-cb78c0bf2d71",
+                "serial": "3402483834845156",
+                "customerReference": "Michael Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/06/2025 01:07:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.691483867820175,
+                    -3.8228339715247106
+                ],
+                "type": "Point"
+            },
+            "id": 98
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2ce13988-d753-4027-a56e-030b0f2f9000",
+                "serial": "3897259151091350",
+                "customerReference": "Christine Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/03/2025 00:06:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.6668122789993,
+                    4.237507530086634
+                ],
+                "type": "Point"
+            },
+            "id": 99
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7b64b02b-64e5-4530-a265-38da3a62a2d0",
+                "serial": "8827505652129585",
+                "customerReference": "Alex Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/20/2025 00:59:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.077986097392404,
+                    1.158455370627327
+                ],
+                "type": "Point"
+            },
+            "id": 100
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "95319d54-fa25-4425-9abb-be0dddfecbd4",
+                "serial": "1606737586906628",
+                "customerReference": "Christine Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/15/2025 09:00:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.972815226686805,
+                    1.3746771844988581
+                ],
+                "type": "Point"
+            },
+            "id": 101
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "c118b2a0-2f96-436f-a765-51dfdd6ded7b",
+                "serial": "9645068521448335",
+                "customerReference": "Christine Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/06/2025 18:41:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.70487655910881,
+                    -1.9688113495208923
+                ],
+                "type": "Point"
+            },
+            "id": 102
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7e818b14-5fac-4106-a744-022b7bb7b045",
+                "serial": "4714400665927082",
+                "customerReference": "Michelle Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/27/2025 16:48:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.12150694875253,
+                    -4.441926943478342
+                ],
+                "type": "Point"
+            },
+            "id": 103
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "e7309f1c-0cea-4291-8d00-d48210446b5f",
+                "serial": "8298285376407088",
+                "customerReference": "Chris Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/29/2025 09:17:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.523338386075395,
+                    3.168235193370606
+                ],
+                "type": "Point"
+            },
+            "id": 104
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "e71bbd73-f4d2-4124-929b-3827cd62740f",
+                "serial": "6293141892178089",
+                "customerReference": "Jane Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/08/2025 02:20:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.91316880303278,
+                    0.950227960459979
+                ],
+                "type": "Point"
+            },
+            "id": 105
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f0f3de93-d615-423d-a714-bbf4f92306b5",
+                "serial": "2287016029712096",
+                "customerReference": "Alex Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/13/2025 00:14:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.298217098841334,
+                    2.1588176274728204
+                ],
+                "type": "Point"
+            },
+            "id": 106
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b6eabfd7-02c5-45cd-a966-3725b2c0bbd0",
+                "serial": "9338810426390411",
+                "customerReference": "Christine Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/15/2025 11:44:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.17929984057562,
+                    -1.1039157435399423
+                ],
+                "type": "Point"
+            },
+            "id": 107
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "9c98383e-9fdd-42cf-80c4-7797a259cd61",
+                "serial": "4206686508885751",
+                "customerReference": "Jane Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/07/2025 20:15:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.63277214334205,
+                    4.303842558124621
+                ],
+                "type": "Point"
+            },
+            "id": 108
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "80796230-4043-4075-84e3-e5ea3e63c953",
+                "serial": "7666054579221346",
+                "customerReference": "Michael Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/10/2025 15:19:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.13529102039401,
+                    -3.2237694891061044
+                ],
+                "type": "Point"
+            },
+            "id": 109
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7176bd6b-bc8d-4f9c-bef2-963291c72226",
+                "serial": "2963704366902235",
+                "customerReference": "Jane Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/24/2025 15:53:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.68300587538507,
+                    2.309630059840525
+                ],
+                "type": "Point"
+            },
+            "id": 110
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0fbced54-da5e-49cb-94aa-89c31f9aba19",
+                "serial": "4408463330845657",
+                "customerReference": "Christine Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/04/2025 13:12:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.652153837936936,
+                    -3.2829076550792835
+                ],
+                "type": "Point"
+            },
+            "id": 111
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0d1439c7-539c-4a5e-94c4-bc7e2c17e546",
+                "serial": "9243812723553112",
+                "customerReference": "Alex Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/28/2025 12:36:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.432884174775566,
+                    2.792770467319226
+                ],
+                "type": "Point"
+            },
+            "id": 112
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0ceac112-67de-4ec2-9328-ee42caffb87f",
+                "serial": "1323360383803603",
+                "customerReference": "Michelle Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/16/2025 19:01:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.88814091727855,
+                    3.400445201997278
+                ],
+                "type": "Point"
+            },
+            "id": 113
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "60ce9139-12d3-4158-bd15-f44509f08686",
+                "serial": "8798007432632548",
+                "customerReference": "Christine Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/13/2025 15:16:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.91860632435966,
+                    2.5513692408078343
+                ],
+                "type": "Point"
+            },
+            "id": 114
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "9300f1f7-9879-4eb3-b216-5fc2ee488a2b",
+                "serial": "1787214395701258",
+                "customerReference": "John Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/15/2025 04:21:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.22534208790635,
+                    -1.9829513934191323
+                ],
+                "type": "Point"
+            },
+            "id": 115
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "46863b26-6f5d-4f32-9b8f-a4806f8d6895",
+                "serial": "7468763346751604",
+                "customerReference": "John Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/23/2025 01:07:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.082029526646934,
+                    0.7245345052104177
+                ],
+                "type": "Point"
+            },
+            "id": 116
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f32d2875-c2ec-4281-859d-bdeb34227ced",
+                "serial": "8834309019689804",
+                "customerReference": "John Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/20/2025 08:40:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.7530198612829,
+                    3.6493399957768426
+                ],
+                "type": "Point"
+            },
+            "id": 117
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7e1dc142-a1ec-479a-9a05-9a6ec0f24677",
+                "serial": "2834594742236903",
+                "customerReference": "Alice Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/13/2025 05:55:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.98373822218211,
+                    3.4067396596504187
+                ],
+                "type": "Point"
+            },
+            "id": 118
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2df54343-d22f-4f88-af5a-f35b4ac77aca",
+                "serial": "6804072594560673",
+                "customerReference": "Michelle Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/20/2025 09:23:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.941966892555996,
+                    -1.4749212474545765
+                ],
+                "type": "Point"
+            },
+            "id": 119
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "3f49f1f5-e38a-4c01-874a-8cb0194249e5",
+                "serial": "2303038565339331",
+                "customerReference": "Christine Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/23/2025 09:20:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.41539263088982,
+                    -1.1066330552481571
+                ],
+                "type": "Point"
+            },
+            "id": 120
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "51734cca-8924-409b-b39e-ad69d6ca09af",
+                "serial": "2932837357575762",
+                "customerReference": "Jane Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/06/2025 22:46:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.86107058756107,
+                    3.5783171721204363
+                ],
+                "type": "Point"
+            },
+            "id": 121
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "84542018-b735-4e46-996c-615dc19155c2",
+                "serial": "8533071959495754",
+                "customerReference": "Jane Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/06/2025 12:51:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.063269175276744,
+                    -0.4044537366387013
+                ],
+                "type": "Point"
+            },
+            "id": 122
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f91895fa-028b-4699-bf84-d151868970c9",
+                "serial": "7631239675377796",
+                "customerReference": "Jane Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/06/2025 11:00:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.074395024161674,
+                    -1.2423558203080907
+                ],
+                "type": "Point"
+            },
+            "id": 123
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "af38d758-8ff9-4fa3-8260-bf8b15bee138",
+                "serial": "4725247649574060",
+                "customerReference": "Alex Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/26/2025 00:42:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.81583921364444,
+                    3.5850126305027343
+                ],
+                "type": "Point"
+            },
+            "id": 124
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "360357a4-e46a-4dce-9e39-a0ff672d3788",
+                "serial": "5262395509539867",
+                "customerReference": "Jane Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/30/2025 11:28:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.70392127750719,
+                    1.5631947934045423
+                ],
+                "type": "Point"
+            },
+            "id": 125
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "676b6dc3-a925-4102-b05b-68132ff8f2b3",
+                "serial": "8924852419139595",
+                "customerReference": "Michelle Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/02/2025 13:09:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.68830438902677,
+                    -1.3089064605512286
+                ],
+                "type": "Point"
+            },
+            "id": 126
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "45246796-5afe-43df-bd94-ace8b93f63ef",
+                "serial": "1994406599964276",
+                "customerReference": "Alex Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/25/2025 01:41:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.62628866283779,
+                    -3.2957140491906394
+                ],
+                "type": "Point"
+            },
+            "id": 127
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "9b4e768a-cc16-435a-b537-345805442813",
+                "serial": "8752250532689259",
+                "customerReference": "Christine Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/01/2025 06:30:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.186416025646544,
+                    1.5033410502729811
+                ],
+                "type": "Point"
+            },
+            "id": 128
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "498fbc20-1389-41e8-abd6-6d0f2644b191",
+                "serial": "4771496562023540",
+                "customerReference": "Michael Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/02/2025 00:50:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.142108650672945,
+                    -3.403955114904565
+                ],
+                "type": "Point"
+            },
+            "id": 129
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "c576f7ce-50db-4569-8c7d-e28118e5593b",
+                "serial": "7242606301781152",
+                "customerReference": "Alice Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/03/2025 23:24:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.99734840329246,
+                    4.398768645057232
+                ],
+                "type": "Point"
+            },
+            "id": 130
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a4c24aed-aadc-40a6-8ffe-e126b0acb182",
+                "serial": "5229346152438707",
+                "customerReference": "Michelle Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/02/2025 18:00:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.531718247361376,
+                    0.06405435672370796
+                ],
+                "type": "Point"
+            },
+            "id": 131
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "6a2b2bd2-2c91-4f22-b40a-c9e5fa634c14",
+                "serial": "4310106600064428",
+                "customerReference": "Michelle Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/18/2025 17:45:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.243796695444956,
+                    -0.7496887460200843
+                ],
+                "type": "Point"
+            },
+            "id": 132
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "979d5602-87a4-4cc3-88ab-701eca0e1ec0",
+                "serial": "4226786276168187",
+                "customerReference": "Alex Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/18/2025 19:29:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.24725548190356,
+                    -3.2625375463551363
+                ],
+                "type": "Point"
+            },
+            "id": 133
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f26173ad-3238-484e-a343-f38721f70110",
+                "serial": "8090694918843572",
+                "customerReference": "Jane Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/16/2025 18:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.57426208458391,
+                    -4.586694915295234
+                ],
+                "type": "Point"
+            },
+            "id": 134
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "18d63856-3384-4766-827b-5893b9b4f4c8",
+                "serial": "7690711989804905",
+                "customerReference": "Jane Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/05/2025 09:26:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.15233567373469,
+                    0.615748009476575
+                ],
+                "type": "Point"
+            },
+            "id": 135
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "92cad93c-736e-4297-91bc-fd45e203343b",
+                "serial": "9456578231628401",
+                "customerReference": "Jane Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/14/2025 14:32:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.12402769934553,
+                    -1.7365793415619555
+                ],
+                "type": "Point"
+            },
+            "id": 136
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0a8a13a7-1ff7-456a-9745-eb4f7e7dc1a7",
+                "serial": "3543299354480502",
+                "customerReference": "John Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/24/2025 02:41:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.955228271470176,
+                    0.6276813859309636
+                ],
+                "type": "Point"
+            },
+            "id": 137
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "4c891655-6e14-486b-bd8e-aedd7b7ad3e7",
+                "serial": "8547654002732325",
+                "customerReference": "Michelle Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/06/2025 07:42:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.931316640865944,
+                    -1.1741937988389175
+                ],
+                "type": "Point"
+            },
+            "id": 138
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "5068e8c0-3b92-485c-bd87-8e31b5f3915c",
+                "serial": "5778534380885536",
+                "customerReference": "Christine Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/20/2025 11:11:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.47180856820752,
+                    2.4137898228741657
+                ],
+                "type": "Point"
+            },
+            "id": 139
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "6fa19d69-db2c-4e5f-9897-6f803f4efb18",
+                "serial": "1685083929179684",
+                "customerReference": "Christine Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/03/2025 13:05:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.05466355991978,
+                    -0.2796263932117373
+                ],
+                "type": "Point"
+            },
+            "id": 140
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "029f1973-40ff-4b8f-9ce8-2b192a7c1882",
+                "serial": "5044234018826483",
+                "customerReference": "Michelle Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/18/2025 21:18:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.37997554626979,
+                    0.1299321297630609
+                ],
+                "type": "Point"
+            },
+            "id": 141
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "7baea4c4-420e-45c7-b93d-8817cc7c4dba",
+                "serial": "6438402003565701",
+                "customerReference": "Alice Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/31/2025 21:03:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.517581453688244,
+                    0.9556257904707515
+                ],
+                "type": "Point"
+            },
+            "id": 142
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "4b457d89-a91d-46e1-bf72-9bc253a72511",
+                "serial": "8732391605476047",
+                "customerReference": "Alice Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/12/2025 09:04:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.342826519612,
+                    -4.06004744419216
+                ],
+                "type": "Point"
+            },
+            "id": 143
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8fa1422e-51ec-4404-9bdd-70eb8d4be0fa",
+                "serial": "4711490156375584",
+                "customerReference": "Michael Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/05/2025 15:03:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.804961966384504,
+                    4.199592520345983
+                ],
+                "type": "Point"
+            },
+            "id": 144
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "58b457fb-953d-48fb-8c4b-4bc75ae43979",
+                "serial": "3577742751564370",
+                "customerReference": "Michael Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/25/2025 06:45:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.60407867660081,
+                    2.724377735260557
+                ],
+                "type": "Point"
+            },
+            "id": 145
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2fa55256-448f-44ea-ae6e-1649196b78b5",
+                "serial": "2802524015135020",
+                "customerReference": "Alex Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/07/2025 17:43:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.76615486198213,
+                    1.7803172269662335
+                ],
+                "type": "Point"
+            },
+            "id": 146
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "86a9bf47-18ab-4316-8ca1-b28743915615",
+                "serial": "3428219085367830",
+                "customerReference": "Christine Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/24/2025 13:45:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.68869632672783,
+                    1.2183688222678724
+                ],
+                "type": "Point"
+            },
+            "id": 147
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "fc7d2c19-54a5-4191-bfe2-8516cb99dd57",
+                "serial": "3242062618581915",
+                "customerReference": "Michelle Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/06/2025 11:38:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.07856637393502,
+                    -2.8233422009239133
+                ],
+                "type": "Point"
+            },
+            "id": 148
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0502a7b3-6f08-407b-92d4-0c664cdec7ca",
+                "serial": "2811317809592737",
+                "customerReference": "Alex Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/03/2025 02:25:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.28343852956353,
+                    -1.7321334873855725
+                ],
+                "type": "Point"
+            },
+            "id": 149
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "e9eb43f0-bbee-4cee-aa09-36bf2e469ec3",
+                "serial": "8352525245762883",
+                "customerReference": "John Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/06/2025 02:57:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.67378420882454,
+                    0.44453875927533026
+                ],
+                "type": "Point"
+            },
+            "id": 150
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "637f8c7e-2768-4258-8dfb-db78f0254c08",
+                "serial": "7763413522766434",
+                "customerReference": "Jane Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/17/2025 22:52:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.80484165980109,
+                    -0.12375364135634648
+                ],
+                "type": "Point"
+            },
+            "id": 151
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "4f8b3662-4015-425c-9083-7317f9a036d4",
+                "serial": "5916924586794437",
+                "customerReference": "Christine Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/14/2025 11:58:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.09883233846445,
+                    2.68015629938758
+                ],
+                "type": "Point"
+            },
+            "id": 152
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "344ad4b2-07a8-4b70-b392-f77b82f6934c",
+                "serial": "7216929397943722",
+                "customerReference": "Chris Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/06/2025 15:35:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.39651517417814,
+                    -3.367358234302931
+                ],
+                "type": "Point"
+            },
+            "id": 153
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "bd6aedc2-d823-4146-bbea-918efe49b503",
+                "serial": "8955799458007640",
+                "customerReference": "Michelle Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/30/2025 11:51:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.03878466555325,
+                    3.781819826145642
+                ],
+                "type": "Point"
+            },
+            "id": 154
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b05760a2-2748-4979-9389-2e71b7eaf022",
+                "serial": "9007494859829960",
+                "customerReference": "Michael Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/25/2025 00:19:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.5273425215124,
+                    -3.9380753788826413
+                ],
+                "type": "Point"
+            },
+            "id": 155
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "9fa5ac2b-7b33-4fd8-ac86-076462942622",
+                "serial": "6520442787976922",
+                "customerReference": "Christine Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/30/2025 23:00:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.348591236867414,
+                    -4.338111519196717
+                ],
+                "type": "Point"
+            },
+            "id": 156
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "295f0ca5-4b69-48c2-bf93-c5f1562d0544",
+                "serial": "5912377736065576",
+                "customerReference": "John Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/18/2025 19:08:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.83481982234311,
+                    -1.3893847341721597
+                ],
+                "type": "Point"
+            },
+            "id": 157
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2c46d392-15bc-4c87-8158-bbbad54f015f",
+                "serial": "7222995719969605",
+                "customerReference": "Michael Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/15/2025 20:23:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.839788890306,
+                    4.220191045253396
+                ],
+                "type": "Point"
+            },
+            "id": 158
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "e9887249-8177-4f08-bf8d-2c559add0629",
+                "serial": "4597517285767972",
+                "customerReference": "Jane Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/25/2025 23:01:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.23011653968739,
+                    3.9498544972121126
+                ],
+                "type": "Point"
+            },
+            "id": 159
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "0c19d3f6-0e35-41cf-ad09-496314c160b3",
+                "serial": "9457857507045682",
+                "customerReference": "John Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/20/2025 19:13:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.75090757587251,
+                    3.16799532190379
+                ],
+                "type": "Point"
+            },
+            "id": 160
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "e0cc0ab8-5790-42ea-b5a1-41bfe8b0fda0",
+                "serial": "1336271291313750",
+                "customerReference": "Alex Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/24/2025 00:31:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.3103754520096,
+                    -0.7529549950245209
+                ],
+                "type": "Point"
+            },
+            "id": 161
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a1a55371-1613-4032-acf2-14e391ccacef",
+                "serial": "6811683084092129",
+                "customerReference": "Michael Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/11/2025 11:57:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.17983008119079,
+                    0.9616896845460072
+                ],
+                "type": "Point"
+            },
+            "id": 162
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a69c2540-c2a9-47ab-b74e-2a00347ae857",
+                "serial": "9864397703230776",
+                "customerReference": "John Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/29/2025 03:24:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.556501855619985,
+                    2.544001918746872
+                ],
+                "type": "Point"
+            },
+            "id": 163
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b3149b57-f9fc-4fa0-b434-1c0b74be8c43",
+                "serial": "5322566374610841",
+                "customerReference": "Alex Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/31/2025 13:27:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.47231064184958,
+                    -0.45956440489641803
+                ],
+                "type": "Point"
+            },
+            "id": 164
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "fa77f714-bbbe-4cf2-b3c5-8be03e32fa8b",
+                "serial": "5231916717822399",
+                "customerReference": "Chris Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/14/2025 20:08:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.56592589095245,
+                    -0.4937699662065542
+                ],
+                "type": "Point"
+            },
+            "id": 165
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "154121d8-d7a8-47c1-82d0-6941a9a9caf5",
+                "serial": "7453624955662202",
+                "customerReference": "John Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/25/2025 13:42:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.16941201689464,
+                    -4.185695985978493
+                ],
+                "type": "Point"
+            },
+            "id": 166
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b7abdf84-e97a-42dd-95bb-f318e1658005",
+                "serial": "3649617605557514",
+                "customerReference": "Alex Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/22/2025 07:59:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.44414858992664,
+                    3.844916002250298
+                ],
+                "type": "Point"
+            },
+            "id": 167
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a0ef2b8d-adb4-4812-a01f-6bd5a7a643cc",
+                "serial": "1473339748257362",
+                "customerReference": "Alex Brown",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/26/2025 18:05:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.48028372006655,
+                    -4.201978990166741
+                ],
+                "type": "Point"
+            },
+            "id": 168
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2e20d5f0-2410-4ca5-a985-f19f5368b9ca",
+                "serial": "9650997131154659",
+                "customerReference": "Michael Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/02/2025 05:11:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.88665045265253,
+                    0.145934653090233
+                ],
+                "type": "Point"
+            },
+            "id": 169
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "117e3fd4-975d-4e85-aa2f-8cef9c0efa5e",
+                "serial": "9935702624398073",
+                "customerReference": "Alice Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/11/2025 22:20:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.90244612783465,
+                    0.8693983159997414
+                ],
+                "type": "Point"
+            },
+            "id": 170
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b3ae7835-b0ec-404f-af25-18132e2060d7",
+                "serial": "5985492448072723",
+                "customerReference": "Alice Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/13/2025 21:25:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.24015931129869,
+                    -4.1170126048253985
+                ],
+                "type": "Point"
+            },
+            "id": 171
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "fd22ee59-9c12-4da8-924f-53fe761883fa",
+                "serial": "2348606144073383",
+                "customerReference": "Michelle Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/08/2025 22:43:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.93775258701856,
+                    -0.6935426600009276
+                ],
+                "type": "Point"
+            },
+            "id": 172
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "9f84b5a8-56d3-49b5-8896-6dc6e8c6b162",
+                "serial": "8146280748216966",
+                "customerReference": "Alice Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/11/2025 14:19:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.34107304426722,
+                    -0.6614518369081583
+                ],
+                "type": "Point"
+            },
+            "id": 173
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "3035c8e1-1251-4b89-adbf-e63aef7060fb",
+                "serial": "9362613235806693",
+                "customerReference": "Chris Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/06/2025 09:50:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.96093925725781,
+                    -0.7540725608492824
+                ],
+                "type": "Point"
+            },
+            "id": 174
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "d2afe16e-1245-445c-b92b-2295e6649a1f",
+                "serial": "6686550386086473",
+                "customerReference": "John Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/23/2025 01:51:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.377651438399575,
+                    -4.618438881508179
+                ],
+                "type": "Point"
+            },
+            "id": 175
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "6cdd8bed-e68d-4506-a42e-f3b18df5d200",
+                "serial": "1780416119541154",
+                "customerReference": "Alex Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/30/2025 02:33:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.11891563567194,
+                    -1.6340425390802715
+                ],
+                "type": "Point"
+            },
+            "id": 176
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f0d10c04-3c01-4e6d-beed-d96f68254b06",
+                "serial": "3771312331695563",
+                "customerReference": "Alice Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/13/2025 02:17:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.83771039538467,
+                    0.41001595316554607
+                ],
+                "type": "Point"
+            },
+            "id": 177
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b5b2b2dc-a85c-49cc-a5de-67498d686cd2",
+                "serial": "7288986916290807",
+                "customerReference": "Alice Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/20/2025 01:27:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.71538299774491,
+                    -4.275216733475284
+                ],
+                "type": "Point"
+            },
+            "id": 178
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "b0352a19-8ea1-4491-ba95-1431243fd6c1",
+                "serial": "8481925653395486",
+                "customerReference": "John Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/04/2025 19:54:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.589407059717644,
+                    -4.386186294479586
+                ],
+                "type": "Point"
+            },
+            "id": 179
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8f89ff4b-7835-40e1-abf9-d58e609417cc",
+                "serial": "3239607313140395",
+                "customerReference": "Alice Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/19/2025 03:15:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.021012085073444,
+                    1.3986440753412017
+                ],
+                "type": "Point"
+            },
+            "id": 180
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "03daa20d-d816-4f67-91f2-f73677f10204",
+                "serial": "7078364389174691",
+                "customerReference": "Jane Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/12/2025 19:42:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.32760277111122,
+                    0.5900086549311352
+                ],
+                "type": "Point"
+            },
+            "id": 181
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "411a8d19-c34d-404c-b96f-c753febe43ac",
+                "serial": "8710941892558287",
+                "customerReference": "Alex Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/30/2025 09:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.35915875148146,
+                    -0.9276392956507871
+                ],
+                "type": "Point"
+            },
+            "id": 182
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f9ceec92-461f-41a7-aad3-38454f9d0465",
+                "serial": "9813336794216176",
+                "customerReference": "Jane Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/16/2025 15:12:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    34.14263827344489,
+                    -1.004629334132567
+                ],
+                "type": "Point"
+            },
+            "id": 183
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "f50885cc-ad90-424d-b032-24acd4a05380",
+                "serial": "1571240774703025",
+                "customerReference": "Chris Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/23/2025 06:01:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.34814509887016,
+                    2.86694756574851
+                ],
+                "type": "Point"
+            },
+            "id": 184
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "231204d4-b2cf-4b97-ad8f-e807fd721155",
+                "serial": "1334710225708870",
+                "customerReference": "Michelle Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/27/2025 05:49:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.84456103976368,
+                    -3.883256186074607
+                ],
+                "type": "Point"
+            },
+            "id": 185
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "83a739c2-b434-44fa-8be4-601e203f759f",
+                "serial": "5898242116556419",
+                "customerReference": "Michelle Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/28/2025 21:56:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.18254480315199,
+                    -4.333491640515406
+                ],
+                "type": "Point"
+            },
+            "id": 186
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "ab7e7a96-ffd9-448f-b17e-432ebebdcdb5",
+                "serial": "9646716834604881",
+                "customerReference": "Chris Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "06/09/2025 06:36:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.818816230912454,
+                    -0.5143206235155278
+                ],
+                "type": "Point"
+            },
+            "id": 187
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "a64413cc-7410-4bcd-9a95-496c485ddc7c",
+                "serial": "9015012649356295",
+                "customerReference": "Chris Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/11/2025 05:04:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.062624898578136,
+                    4.0669145078779225
+                ],
+                "type": "Point"
+            },
+            "id": 188
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "4de2ffea-0c11-454d-a4e6-e37e0227c01a",
+                "serial": "9203532907141757",
+                "customerReference": "Jane Jones",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/27/2025 15:49:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    33.91395557684377,
+                    3.6061021366563173
+                ],
+                "type": "Point"
+            },
+            "id": 189
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "041e6bfb-2eda-41f5-9dfe-856b2b7d259d",
+                "serial": "5420330039902290",
+                "customerReference": "Chris Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/10/2025 15:48:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.71891427427695,
+                    2.4652605718045892
+                ],
+                "type": "Point"
+            },
+            "id": 190
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8c9bbb33-2601-4ee5-82e6-33ab27b79f76",
+                "serial": "8134808563793788",
+                "customerReference": "Jane Johnson",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/02/2025 11:34:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.79337625738385,
+                    -0.146401626676389
+                ],
+                "type": "Point"
+            },
+            "id": 191
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "5f28d4f4-6d34-41ec-a4c9-859ec6072c6f",
+                "serial": "7208219569412174",
+                "customerReference": "Jane Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/28/2025 17:35:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.67589736199326,
+                    4.565516090469544
+                ],
+                "type": "Point"
+            },
+            "id": 192
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "e462746a-3d03-48b9-877d-dcaa9d070d9c",
+                "serial": "4519160171730728",
+                "customerReference": "Christine Miller",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "DISCONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "06/01/2025 14:14:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.52713267862384,
+                    -2.6337810706835323
+                ],
+                "type": "Point"
+            },
+            "id": 193
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "8b2b2605-60f6-401a-a46b-355cd5ba583b",
+                "serial": "8564328246956504",
+                "customerReference": "Alice Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/04/2025 04:46:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    36.54576114837863,
+                    -0.39275472184158566
+                ],
+                "type": "Point"
+            },
+            "id": 194
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "29f92f34-7ebd-4dff-af9b-51100c24c466",
+                "serial": "5336178189189306",
+                "customerReference": "Michelle Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/09/2025 18:29:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    37.583790156130256,
+                    -1.5722185263409374
+                ],
+                "type": "Point"
+            },
+            "id": 195
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "683ea7bf-7811-4c9a-a674-7781630749fc",
+                "serial": "7524368589831604",
+                "customerReference": "Michelle Garcia",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "OFFLINE",
+                "lastSeen": "05/11/2025 13:10:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    35.35001808972318,
+                    -3.9074925078072296
+                ],
+                "type": "Point"
+            },
+            "id": 196
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "761b3f3e-6e33-4a46-9ade-60cca398cfcc",
+                "serial": "6625276751111780",
+                "customerReference": "Christine Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/08/2025 19:17:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    41.42269890627092,
+                    1.8394963520905039
+                ],
+                "type": "Point"
+            },
+            "id": 197
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "91d1c23f-978e-4856-9518-641d4b29e7fc",
+                "serial": "4281607850954289",
+                "customerReference": "Michael Doe",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "UNKNOWN",
+                "lastSeen": "05/20/2025 04:35:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    38.58905864243692,
+                    0.9925018819484874
+                ],
+                "type": "Point"
+            },
+            "id": 198
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "22982007-24dc-4f3f-9e6a-356024ee51cd",
+                "serial": "6347224054111831",
+                "customerReference": "Chris Smith",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "05/24/2025 13:08:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    39.764514548945236,
+                    0.5679595644869009
+                ],
+                "type": "Point"
+            },
+            "id": 199
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "publicId": "2953584a-5af5-4539-a228-8c60dace17d0",
+                "serial": "1965433599357256",
+                "customerReference": "John Williams",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle-stroked",
+                "serviceStatus": "CONNECTED",
+                "onlineStatus": "ONLINE",
+                "lastSeen": "06/05/2025 18:38:13"
+            },
+            "geometry": {
+                "coordinates": [
+                    40.51192051265291,
+                    0.7843241624531947
+                ],
+                "type": "Point"
+            },
+            "id": 200
+        }
+    ]
+}
