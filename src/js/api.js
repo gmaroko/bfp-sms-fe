@@ -105,7 +105,6 @@ export async function fetchDeviceHistory(deviceId) {
     }
 
     const result = await response.json();
-    console.log(result)
     return result?.data?.history || [];
   } catch (error) {
     console.error("Fetch history error:", error);

@@ -211,10 +211,7 @@ export async function initMap() {
     <strong>Customer:</strong> ${feature.properties.customerReference}<br>
     <strong>Device ID:</strong> ${feature.properties.serial}<br>
     <strong>Status:</strong> ${feature.properties.serviceStatus}<br>
-    <button class="btn btn-sm btn-primary"
-        onclick="openManageDeviceModal(${JSON.stringify(feature).replace(/"/g, "&quot;")})">
-        Manage Device
-    </button>
+    <button class="btn btn-sm btn-primary" onclick="openManageDeviceModal(${JSON.stringify(feature).replace(/"/g, "&quot;")})"> Manage Device</button>
   `;
   }
 
