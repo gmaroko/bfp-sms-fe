@@ -1,8 +1,8 @@
 import * as L from "leaflet";
 import "leaflet.markercluster";
 import List from "list.js";
-import { fetchDevices, fetchDeviceHistory, logDeviceActivity} from "./api.js";
-import { DEVICE_ACTIVITY_TYPE } from "./utils/common.js"; 
+import { fetchDevices, fetchDeviceHistory, sendDeviceCommand } from "./api.js";
+import { DEVICE_ACTIVITY_TYPE } from "./utils/common.js";
 
 export async function initMap() {
   let map,
@@ -74,16 +74,6 @@ export async function initMap() {
   `;
 
       layer.bindPopup(popupContent);
-
-      // Add to sidebar
-      $("#feature-list tbody").append(`
-    <tr class="feature-row" id="${L.stamp(layer)}" lat="${layer.getLatLng().lat}" lng="${layer.getLatLng().lng}">
-      <td style="vertical-align: middle;"><img width="16" height="18" src="/assets/img/sensor-color.png"></td>
-      <td class="feature-name">${feature.properties.customerReference}</td>
-      <td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td>
-    </tr>
-  `);
-
       // Add to search
       deviceSearch.push({
         name: feature.properties.customerReference,
@@ -99,20 +89,20 @@ export async function initMap() {
         $("#manageDeviceBtn")
           .off("click")
           .on("click", () => {
-            openManageDeviceModal(feature);
+            openManageDeviceModal(feature, layer);
           });
       });
     },
   });
 
-  function openManageDeviceModal(feature) {
+  function openManageDeviceModal(feature, layer) {
     const currentStatus = feature.properties.serviceStatus;
     const possibleStatuses = ["CONNECT", "DISCONNECT", "SUSPEND"].filter(
       (s) => s !== currentStatus.slice(0, -2), // remove "ED" from status for comparison
     );
 
     const modalContent = `
-    <h4>Manage Device - ${feature.properties.customerReference}</h4>
+    <h4>Device Reference : ${feature.properties.customerReference} | ${feature.properties.serial} <br> State: ${feature.properties.serviceStatus}</h4>
     <div class="btn-group" role="group" style="margin-bottom: 15px;">
       <button type="button" class="btn btn-primary" id="updateStatusBtn">Update Status</button>   
       <button type="button" class="btn btn-info" id="deviceHistoryBtn">Device History</button>
@@ -185,35 +175,47 @@ export async function initMap() {
           return;
         }
 
-        alert(
-          `Processing. Status will be updated to ${newStatus} with remarks: ${remarks}`,
-        );
-        try {
-          // Disable Save button to prevent multiple clicks
-          $("#saveStatusBtn").prop("disabled", true).text("Saving...");
+        alert(`Processing. Status will be updated to ${newStatus}.`);
+        // Disable Save button while processing
+        $("#saveStatusBtn").prop("disabled", true).text("Saving...");
 
-          // Call API to update device status
-          await logDeviceActivity(
-            feature.properties.serial,
+        try {
+          // Call backend activity API
+          const result = await sendDeviceCommand(
+            feature.id,
             newStatus,
             remarks,
-            newStatus
           );
 
           // Success
-          // $("#deviceDetailModal").modal("hide");
+          $("#deviceDetailModal").modal("hide");
 
-          // update status on the map popup
-          feature.properties.serviceStatus = newStatus;
+          // Immediately update UI with PENDING status
+          feature.properties.serviceStatus = "PENDING"; // temporary status
           layer.bindPopup(generatePopupContent(feature));
+
+          alert(
+            `Activity queued successfully. Request ID: ${result?.data?.requestId || "N/A"}`,
+          );
+          $("#deviceDetailModal").modal("hide");
         } catch (err) {
-          console.error("Failed to update device status:", err);
-          alert("Failed to update device status. Please try again.");
+          console.log(`Failed to queue activity: ${err.message}`);
         } finally {
-          // Re-enable Save button
           $("#saveStatusBtn").prop("disabled", false).text("Save");
         }
       });
+  }
+
+  function generatePopupContent(feature) {
+    return `
+    <strong>Customer:</strong> ${feature.properties.customerReference}<br>
+    <strong>Device ID:</strong> ${feature.properties.serial}<br>
+    <strong>Status:</strong> ${feature.properties.serviceStatus}<br>
+    <button class="btn btn-sm btn-primary"
+        onclick="openManageDeviceModal(${JSON.stringify(feature).replace(/"/g, "&quot;")})">
+        Manage Device
+    </button>
+  `;
   }
 
   async function loadDeviceHistory(feature) {
@@ -222,7 +224,7 @@ export async function initMap() {
 
     try {
       // Mock API response — replace with real API call
-      const history = await fetchDeviceHistory(feature.properties.serial);
+      const history = await fetchDeviceHistory(feature.id);
       if (!history || history.length === 0) {
         $historySection.html("<p>No history available for this device.</p>");
         return;
@@ -265,18 +267,16 @@ export async function initMap() {
   }
 
   // Add devices to cluster group
-  markerClusters.addLayer(devicesLayer);
 
   // Sidebar sync with optional status filter
   function syncSidebar(statusFilter = "ALL") {
     $("#feature-list tbody").empty();
-    markerClusters.clearLayers(); // remove all markers from map
+    markerClusters.clearLayers();
 
     devicesLayer.eachLayer((layer) => {
       const deviceStatus = layer.feature.properties.serviceStatus;
 
       if (statusFilter === "ALL" || deviceStatus === statusFilter) {
-        // Update icon
         layer.setIcon(
           L.icon({
             iconUrl: getDeviceIcon(deviceStatus),
@@ -286,17 +286,19 @@ export async function initMap() {
           }),
         );
 
-        // Add to cluster
         markerClusters.addLayer(layer);
 
-        // Add to sidebar
         $("#feature-list tbody").append(`
-          <tr class="feature-row" id="${L.stamp(layer)}" lat="${layer.getLatLng().lat}" lng="${layer.getLatLng().lng}">
-            <td style="vertical-align: middle;"><img width="16" height="18" src="${getDeviceIcon(deviceStatus)}"></td>
-            <td class="feature-name">${layer.feature.properties.customerReference}</td>
-            <td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td>
-          </tr>
-        `);
+        <tr class="feature-row" id="${L.stamp(layer)}" lat="${layer.getLatLng().lat}" lng="${layer.getLatLng().lng}">
+          <td style="vertical-align: middle;">
+            <img width="16" height="18" src="${getDeviceIcon(deviceStatus)}">
+          </td>
+          <td class="feature-name">${layer.feature.properties.customerReference}</td>
+          <td style="vertical-align: middle;">
+            <i class="fa fa-chevron-right pull-right"></i>
+          </td>
+        </tr>
+      `);
       }
     });
 
@@ -317,20 +319,20 @@ export async function initMap() {
     syncSidebar(selectedStatus);
   });
 
-  // Expose addDevices method
   map.addDevices = function (deviceData) {
-    const tempLayer = L.geoJson(deviceData, {
-      pointToLayer: devicesLayer.options.pointToLayer,
-      onEachFeature: devicesLayer.options.onEachFeature,
-    });
-    tempLayer.eachLayer((layer) => markerClusters.addLayer(layer));
+    devicesLayer.clearLayers(); // prevent duplicates on refresh
     devicesLayer.addData(deviceData);
+
     syncSidebar();
   };
 
   // Fetch devices from API immediately
   try {
     const devices = await fetchDevices();
+    if (devicesLayer.getLayers().length > 0) {
+      devicesLayer.clearLayers();
+    }
+
     map.addDevices(devices);
   } catch (err) {
     console.error("Failed to load devices:", err);

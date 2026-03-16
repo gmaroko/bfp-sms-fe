@@ -81,74 +81,71 @@ export async function uploadOnboardFile(file) {
 }
 
 /**
- * Log device activity - just status for now, can be extended later for other activity types
- * @param {string} deviceId - The ID of the device
- * @param {string} status - The new service status
- * @param {string} remarks - Any remarks for the status update
- * @returns {Promise<Object>} - API response JSON
- */
-export async function logDeviceActivity(deviceId, status, remarks, activityType) {
-  if (!deviceId) throw new Error("Device ID is required");
-
-  const url = `${import.meta.env.VITE_API_BASE_URL}/devices/activity}`;
-
-  data = {
-    "status": status,
-    "remarks": remarks
-  }
-
-  const response = await fetch(url, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${sessionStorage.getItem("token")}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({deviceId: deviceId, serviceStatus: status, activityType: activityType, payload: data}),
-  });
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Failed to update device status: ${text}`);
-  }
-
-  return response.json();
-}
-
-/**
  * Fetch device history (mock function for now, TODO: update once API is available)
  * @param {string} deviceId - The ID of the device
  * @returns {Promise<Object>} - API response JSON
  */
-export async  function fetchDeviceHistory(deviceId) {
+export async function fetchDeviceHistory(deviceId) {
   if (!deviceId) throw new Error("Device ID is required");
+  const url = `${import.meta.env.VITE_API_BASE_URL}/devices/activity/history/${deviceId}`;
+  try {
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+        "Content-Type": "application/json",
+      },
+    });
 
-  const url = `${import.meta.env.VITE_API_BASE_URL}/devices/${deviceId}/history`;
+    if (!response.ok) {
+      const text = await response.text();
+      throw new Error(
+        `Failed to fetch device history: ${response.status} - ${text}`,
+      );
+    }
 
-  // const response = await fetch(url, {
-  //   method: "GET",
-  //   headers: {
-  //     Authorization: `Bearer ${sessionStorage.getItem("token")}`,
-  //     "Content-Type": "application/json",
-  //   }
-  // });
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve([
-        {
-          timestamp: "2026-03-15 09:23",
-          action: "Status Change",
-          status: "DISCONNECT",
-          remarks: "Maintenance required",
-          by: "system",
-        },
-        {
-          timestamp: "2026-03-10 14:11",
-          action: "Status Change",
-          status: "CONNECT",
-          remarks: "Back online",
-          by: "system",
-        },
-      ]);
-    }, 500);
-  });
+    const result = await response.json();
+    console.log(result)
+    return result?.data?.history || [];
+  } catch (error) {
+    console.error("Fetch history error:", error);
+    return [];
+  }
+}
+
+/**
+ *
+ * @param {string} deviceId
+ * @param {string} command
+ * @param {string} remarks
+ * @returns
+ */
+export async function sendDeviceCommand(deviceId, command, remarks) {
+  try {
+    const url = `${import.meta.env.VITE_API_BASE_URL}/devices/activity`;
+
+    const payload = {
+      deviceId: deviceId,
+      activityType: command, // "CONNECT", "DISCONNECT", etc.
+      remarks: remarks,
+    };
+
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to register device activity");
+    }
+
+    return await response.json();
+  } catch (err) {
+    console.error("Error updating device status:", err);
+    throw err;
+  }
 }
