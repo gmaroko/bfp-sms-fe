@@ -81,24 +81,29 @@ export async function uploadOnboardFile(file) {
 }
 
 /**
- * Update device service status
+ * Log device activity - just status for now, can be extended later for other activity types
  * @param {string} deviceId - The ID of the device
  * @param {string} status - The new service status
  * @param {string} remarks - Any remarks for the status update
  * @returns {Promise<Object>} - API response JSON
  */
-export async function updateDeviceStatus(deviceId, status, remarks) {
+export async function logDeviceActivity(deviceId, status, remarks, activityType) {
   if (!deviceId) throw new Error("Device ID is required");
 
-  const url = `${import.meta.env.VITE_API_BASE_URL}/devices/${deviceId}/status`;
+  const url = `${import.meta.env.VITE_API_BASE_URL}/devices/activity}`;
+
+  data = {
+    "status": status,
+    "remarks": remarks
+  }
 
   const response = await fetch(url, {
-    method: "PUT",
+    method: "POST",
     headers: {
       Authorization: `Bearer ${sessionStorage.getItem("token")}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ serviceStatus: status, remarks }),
+    body: JSON.stringify({deviceId: deviceId, serviceStatus: status, activityType: activityType, payload: data}),
   });
 
   if (!response.ok) {

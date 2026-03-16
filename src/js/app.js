@@ -1,7 +1,8 @@
 import * as L from "leaflet";
 import "leaflet.markercluster";
 import List from "list.js";
-import { fetchDevices } from "./api.js";
+import { fetchDevices, fetchDeviceHistory, logDeviceActivity} from "./api.js";
+import { DEVICE_ACTIVITY_TYPE } from "./utils/common.js"; 
 
 export async function initMap() {
   let map,
@@ -192,10 +193,11 @@ export async function initMap() {
           $("#saveStatusBtn").prop("disabled", true).text("Saving...");
 
           // Call API to update device status
-          await updateDeviceStatus(
-            feature.properties.deviceId,
+          await logDeviceActivity(
+            feature.properties.serial,
             newStatus,
             remarks,
+            newStatus
           );
 
           // Success
@@ -220,8 +222,7 @@ export async function initMap() {
 
     try {
       // Mock API response — replace with real API call
-      const history = await fetchDeviceHistory(feature.properties.deviceId);
-
+      const history = await fetchDeviceHistory(feature.properties.serial);
       if (!history || history.length === 0) {
         $historySection.html("<p>No history available for this device.</p>");
         return;
