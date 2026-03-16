@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }),
 
       success: function (response) {
-        console.log(response);
 
         if (response.statusCode !== "00") {
           alert(response.statusMessage);
